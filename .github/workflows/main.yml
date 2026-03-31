@@ -9,6 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: copy-files-to-server
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -17,4 +20,3 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "index.html"
           target: "/var/www/luveshsadhwani.com"
-  
