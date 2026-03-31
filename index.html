@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software Engineer | KL</title>
+    <style>
+      :root {
+        --bg: #0d1117;
+        --text: #c9d1d9;
+        --accent: #58a6ff;
+        --dim: #8b949e;
+      }
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: "SF Mono", "Fira Code", monospace;
+        padding: 5% 10%;
+        line-height: 1.6;
+        max-width: 750px;
+      }
+      .avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 2px solid var(--accent);
+        margin-bottom: 1.5rem;
+        object-fit: cover;
+        filter: grayscale(100%); /* Optional: matches the terminal vibe */
+      }
+      h1 {
+        font-size: 1.2rem;
+        color: var(--accent);
+        margin-bottom: 2rem;
+      }
+      .block {
+        margin-bottom: 2.5rem;
+      }
+      .label {
+        color: var(--dim);
+        display: block;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .cursor {
+        display: inline-block;
+        width: 8px;
+        height: 15px;
+        background: var(--accent);
+        margin-left: 5px;
+        animation: blink 1s infinite;
+        vertical-align: middle;
+      }
+      @keyframes blink {
+        0%,
+        50% {
+          opacity: 1;
+        }
+        51%,
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="avatar.png" alt="Luvesh" class="avatar" />
+
+    <h1>Luvesh Sadhwani // Software Engineer<span class="cursor"></span></h1>
+
+    <div class="block">
+      <span class="label">Location</span>
+      Kuala Lumpur, Malaysia
+    </div>
+
+    <div class="block">
+      <span class="label">Focus</span>
+      Building software since 2021. I specialize in firming my understanding of
+      product and process before exploring technical solutions. Problem-first,
+      code-second.
+    </div>
+
+    <div class="block">
+      <span class="label">Primary Stack</span>
+      Nuxt, Node.js, MongoDB, Fly.io, TypeScript.
+    </div>
+
+    <div class="block">
+      <span class="label">Connect</span>
+      <a href="https://linkedin.com/in/luveshls">LinkedIn</a> /
+      <a href="https://github.com/luveshsadhwani">GitHub</a> /
+      <a href="mailto:luveshsadhwani@gmail.com">Email</a>
+    </div>
+  </body>
+</html>
